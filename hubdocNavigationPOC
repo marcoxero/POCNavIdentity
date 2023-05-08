@@ -1,0 +1,7 @@
+var InitNavigation = () => {
+    XERO.Navigation.init(MyNavigation, document.getElementById("header"));
+}
+
+$(".top-bar").hide(); //#00345d
+$('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'https://edge.xero.com/platform/navigation/5.x/header.min.css') );
+$.getScript("https://edge.xero.com/platform/header/6.0.1/header.min.js", InitNavigation);
